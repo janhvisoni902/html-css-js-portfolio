@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #f1dcb4; /* Ivory Gold */
+    color: #580F41; /* Deep Plum */
+    padding: 2rem;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  h4 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+  }
+  
+  h5, div {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+  }
+  

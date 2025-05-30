@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bridgerton — Season 1</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #C5D2D6;
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h1, h2 {
+      color: #2c3e50;
+    }
+
+    .video-container {
+      margin: 20px auto;
+      width: 80%;
+      max-width: 800px;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      height: 400px;
+      border-radius: 10px;
+    }
+
+    .highlight-box {
+      background: #ffffff;
+      margin: 30px auto;
+      padding: 20px;
+      border: 2px solid #9ab3ba;
+      border-radius: 15px;
+      max-width: 800px;
+      font-size: 1.1em;
+      color: #333;
+    }
+
+    .character-gallery {
+      margin-top: 40px;
+    }
+
+    .gallery-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 20px auto;
+    }
+
+    .character-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 10px;
+      width: 200px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .character-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 40px;
+      font-size: 16px;
+      text-decoration: none;
+      color: #2c3e50;
+    }
+
+    .slideshow-container {
+      position: relative;
+      max-width: 800px;
+      margin: 60px auto 20px;
+      overflow: hidden;
+    }
+
+    .slide {
+      display: none;
+    }
+
+    .slide img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 12px;
+      color: white;
+      font-weight: bold;
+      font-size: 24px;
+      background-color: rgba(0,0,0,0.5);
+      border-radius: 50%;
+      user-select: none;
+    }
+
+    .prev { left: 10px; }
+    .next { right: 10px; }
+
+    .image-gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+      gap: 15px;
+      margin: 20px auto 60px;
+      max-width: 900px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      white-space: nowrap;
+    }
+
+    .gallery-item {
+      flex: 0 0 auto;
+      text-align: center;
+      width: 200px;
+      scroll-snap-align: start;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .gallery-item p {
+      margin-top: 8px;
+      font-weight: bold;
+      color: #4b2e2e;
+    }
+
+    .image-gallery::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Season 1: Daphne & Simon</h1>
+
+  <div class="video-container">
+    <iframe src="Bridgerton.mp4" title="Bridgerton Video" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <div class="highlight-box">
+    <p>The diamond of the season, Daphne Bridgerton, enters the marriage mart with grace and poise — only to strike a scandalous arrangement with the brooding Duke of Hastings. What begins as a ruse soon ignites into a love neither expected. In a world ruled by reputation, they must decide what truly matters: pride or passion.</p>
+  </div>
+
+  <div class="character-gallery">
+    <h2>Meet the Leads</h2>
+    <div class="gallery-row">
+      <div class="character-card">
+        <img src="daphne.jpg" alt="Daphne Bridgerton">
+        <p>Daphne Bridgerton</p>
+      </div>
+      <div class="character-card">
+        <img src="simon.jpg" alt="Simon Basset">
+        <p>Simon Basset, Duke of Hastings</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="image-gallery">
+    <div class="gallery-item"><img src="anthony.jpg" alt="Viscount Anthony Bridgerton"><p>Viscount Anthony Bridgerton</p></div>
+    <div class="gallery-item"><img src="mother.jpg" alt="Lady Violet Bridgerton"><p>Lady Violet Bridgerton</p></div>
+    <div class="gallery-item"><img src="danbury.jpg" alt="Lady Agatha Danbury"><p>Lady Agatha Danbury</p></div>
+    <div class="gallery-item"><img src="benedict.jpg" alt="Benedict Bridgerton"><p>Benedict Bridgerton</p></div>
+    <div class="gallery-item"><img src="eloise.jpg" alt="Eloise Bridgerton"><p>Eloise Bridgerton</p></div>
+    <div class="gallery-item"><img src="pen.jpg" alt="Penelope Featherington"><p>Penelope Featherington</p></div>
+    <div class="gallery-item"><img src="colin.jpg" alt="Colin Bridgerton"><p>Colin Bridgerton</p></div>
+    <div class="gallery-item"><img src="marina.jpg" alt="Marina Thompson"><p>Marina Thompson</p></div>
+    <div class="gallery-item"><img src="hy.jpg" alt="Hyacinth Bridgerton"><p>Hyacinth Bridgerton</p></div>
+  </div>
+
+  <button onclick="scrollGallery(-1)">←</button>
+  <button onclick="scrollGallery(1)">→</button>
+
+  <a href="bridgerton.html">← Back to Home</a>
+
+  <script>
+    function scrollGallery(direction) {
+      const gallery = document.querySelector('.image-gallery');
+      const scrollAmount = 220;
+      gallery.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
